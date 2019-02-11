@@ -31,10 +31,7 @@ public class Perforator
 	
 	public Perforator(int numberOfRevolutions, int frequencyOfStrokes, String color, String producer, String name, int price, int weight, String typeOfCartridge, int power)
 	{
-		this.numberOfRevolutions = numberOfRevolutions;
-		this.frequencyOfStrokes = frequencyOfStrokes;
-		this.color = color;
-		this.producer = producer;
+		this(numberOfRevolutions, frequencyOfStrokes, color, producer);
 		this.name = name;
 		this.price = price;
 		this.weight = weight;
