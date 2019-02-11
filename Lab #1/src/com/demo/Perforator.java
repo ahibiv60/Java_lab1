@@ -42,6 +42,10 @@ public class Perforator
 		this.power = power;
 	}
 	//////////////////////////////////////Сетери/гетери////////////////////////////////////////////////////
+	public void setName(String name) 
+   	{
+		this.name=name;
+    }
 	public String getName() 
 	{
 		return this.name;
