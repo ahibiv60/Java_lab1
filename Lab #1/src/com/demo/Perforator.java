@@ -2,23 +2,23 @@ package com.demo;
 
 public class Perforator 
 {
-	// Основні поля
-	public int numberOfRevolutions; 				// Кількість обертів
-	public int frequencyOfStrokes;   				// Частота ударів
-	public String color;      						// Колір
-	public String producer;          				// Виробник
+	// Main fields
+	public int numberOfRevolutions;
+	public int frequencyOfStrokes;
+	public String color;
+	public String producer;
 	
-	// Додаткові поля
-	private String name;              				// Назва
-	private int price;        		  				// Ціна
-	protected int weight;							// Вага
-	protected String typeOfCartridge;				// Тип патрона
-	public static int power;						// Потужність
+	// Additional fields
+	private String name;
+	private int price;
+	protected int weight;
+	protected String typeOfCartridge;
+	public static int power;
 	
-	///////////////////////////////////////Конструктори////////////////////////////////////////////////
+	///////////////////////////////////////Constructors////////////////////////////////////////////////
 	
 	public Perforator(){
-		//Дефолтний конструктор
+		//Default constructor
 	}
 	
 	public Perforator(int numberOfRevolutions, int frequencyOfStrokes, String color, String producer)
@@ -41,7 +41,7 @@ public class Perforator
 		this.typeOfCartridge = typeOfCartridge;
 		this.power = power;
 	}
-	//////////////////////////////////////Сетери/гетери////////////////////////////////////////////////////
+	//////////////////////////////////////Setters/Getters////////////////////////////////////////////////////
 	public void setName(String name) 
    	{
 		this.name=name;
@@ -58,18 +58,18 @@ public class Perforator
 	{
 		return this.price;
     }
-	//////////////////////////////////////////Методи//////////////////////////////////////////////////
+	//////////////////////////////////////////Methods//////////////////////////////////////////////////
 	public String toString()
 	{
-		return String.format("Назва: %s\nКолір: %s\nВиробник: %s\nКількість обертів: %d\nЧастота ударів: %d\nВага: %d\nТип патрона: %s\nПотужність: %d\nЦіна: %d\n", name, color, producer, numberOfRevolutions, frequencyOfStrokes, weight, typeOfCartridge, power, price);
+		return String.format("Name: %s\nColor: %s\nProducer: %s\nNumber of revolutions: %d\nFrequency of strokes: %d\nWeight: %d\nType of cartridge: %s\nPower: %d\nPrice: %d\n", name, color, producer, numberOfRevolutions, frequencyOfStrokes, weight, typeOfCartridge, power, price);
 	}
 	public static void printStaticPower()
 	{
-		System.out.println("Потужність: "+power);
+		System.out.println("Power: "+power);
 	}
 	public void printPower()
 	{
-		System.out.println("Потужність: "+power);
+		System.out.println("Power: "+power);
 	}
 	public void resetValues(int numberOfRevolutions, int frequencyOfStrokes, String color, String producer, String name, int price, int weight, String typeOfCartridge, int power)
 	{

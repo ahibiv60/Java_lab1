@@ -8,11 +8,11 @@ public class PerforatorDemo {
 		Perforator perforator_2 = new Perforator(12000, 4600, "White", "Makita");
 		Perforator perforator_3 = new Perforator(11000, 4500, "Black", "Makita", "HR2470", 4099, 2, "SDS+", 780);
 		
-		System.out.println("Перфоратор №1");
+		System.out.println("Perforator #1");
 		System.out.println(perforator_1.toString());
-		System.out.println("Перфоратор №2");
+		System.out.println("Perforator #2");
 		System.out.println(perforator_2.toString());
-		System.out.println("Перфоратор №3");
+		System.out.println("Perforator #3");
 		System.out.println(perforator_3.toString());
 		
 		perforator_1.printStaticPower();
